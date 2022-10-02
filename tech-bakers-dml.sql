@@ -1,3 +1,9 @@
+USE tech_bakers_db; 
+
+-- roles 
+INSERT INTO roles (name,createdAt,updatedAt) VALUES ('admin','1000-01-01 00:00:00','1000-01-01 00:00:00');
+INSERT INTO roles (name,createdAt,updatedAt) VALUES ('user','1000-01-01 00:00:00','1000-01-01 00:00:00');
+
 --categories--
 INSERT INTO  categories (name,createdAt,updatedAt) 
 VALUES ('En oferta','1000-01-01 00:00:00','1000-01-01 00:00:00');
@@ -120,3 +126,15 @@ VALUES ('pastelcereal.jpg',17,'2022-09-22 04:11:06','2022-09-22 04:11:06');
 
 INSERT INTO images (fileName,productId,createdAt,updatedAt) 
 VALUES ('masas.jpeg',18,'2022-09-25 14:15:48','2022-09-25 14:15:48');
+
+
+--USERS
+INSERT INTO users (fullname,lastname,email,phonenumber,address,city,password,terms,roleId,createdAt,updatedAt)
+VALUES ('Test1','test1','test@test1.com',4657382,"cra 89 # 17",'Montesori','$2a$10$I0g3i729m2mPy0yIZb8c1uRBqh1Vqn9IabyrJc4n.52iyHPBUygzK','terms',1,"2022-09-25 13:31:50","2022-09-25 13:31:50");
+
+INSERT INTO users (fullname,lastname,email,phonenumber,address,city,password,terms,roleId,createdAt,updatedAt)
+VALUES ('User1','User1 Other', 'user1@user.com' , 1114563,"cr 45 # 16 a sur", 'Montesori' , '$2a$10$ZdNfz08zp0iiFFzLTo.L0OX5mQX63FI1PlptWvpclKnZSrxwwGPQ.','terms' ,2,"2022-09-25 23:16:03","2022-09-27 15:26:36");
+
+INSERT INTO users (fullname,lastname,email,phonenumber,address,city,password,terms,roleId,createdAt,updatedAt)
+VALUES ('User2',"User2 New", 'user2@user.com' ,5558899,"Cra 13 Sur # 23 -56",'Montesori','$2a$10$YUysJl7w1KRv0puDhnFT.OVEdfTKXCFeIip1LTn2E9AuxD0WgoOH.','terms' ,2, "2022-09-27 14:43:12","2022-09-27 15:31:42");
+
