@@ -122,7 +122,7 @@ ON UPDATE CASCADE;
 CREATE TABLE IF NOT EXISTS images(
     createdAt DATETIME, 
     updatedAt DATETIME,
-    name VARCHAR(255),
+    fileName VARCHAR(255),
     productId MEDIUMINT, 
     imageId MEDIUMINT NOT NULL AUTO_INCREMENT,
     CONSTRAINT image_pk PRIMARY KEY (imageId) 
